@@ -24,7 +24,7 @@ public:
 
     double getBalance();
     
-    void withdraw(double& amount);
+    virtual void withdraw(double& amount);
     void deposit(double& amount);
 };
 
