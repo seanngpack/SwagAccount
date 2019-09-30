@@ -8,13 +8,13 @@
 #include <iostream>
 #include "BankAccount.h"
 
-BankAccount::BankAccount(double balance, int pin)
+BankAccount::BankAccount(double& balance, int& pin)
 : m_balance(balance), m_pin(pin), m_firstName(""), m_lastName("")
 {
     std::cout << "initialized the BankAccount default" << std::endl;
 }
 
-BankAccount::BankAccount(double balance, int pin, std::string firstName, std::string lastName)
+BankAccount::BankAccount(double& balance, int& pin, std::string& firstName, std::string& lastName)
 : m_balance(balance), m_pin(pin), m_firstName(firstName), m_lastName(lastName)
 {
     std::cout << "initialized the BankAccount" << std::endl;
@@ -22,7 +22,7 @@ BankAccount::BankAccount(double balance, int pin, std::string firstName, std::st
 
 BankAccount::~BankAccount()
 {
-    std::cout << "destroying..." << std::endl;
+    std::cout << "destroying bank account..." << std::endl;
 }
 
 double BankAccount::getBalance() {
@@ -30,7 +30,7 @@ double BankAccount::getBalance() {
 }
 
 void BankAccount::withdraw(double& amount) {
-    m_balance -+ amount;    
+    m_balance -= amount;    
 }
 
 void BankAccount::deposit(double& amount) {

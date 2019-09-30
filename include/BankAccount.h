@@ -5,10 +5,10 @@
     More funtionality to come in the future.
 */
 
-#include <iostream>
-
 #ifndef BANKACCOUNT_H
 #define BANKACCOUNT_H
+
+#include <iostream>
 
 class BankAccount {
 private:
@@ -18,8 +18,8 @@ private:
     std::string m_lastName;
     
 public:
-    BankAccount(double balance, int pin);
-    BankAccount(double balance, int pin, std::string firstName, std::string lastName);
+    BankAccount(double& balance, int& pin);
+    BankAccount(double& balance, int& pin, std::string& firstName, std::string& lastName);
     ~BankAccount();
 
     double getBalance();
