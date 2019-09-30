@@ -1,7 +1,10 @@
 # Swag Account is a project to help me learn C++
 
+## Okay, what can you do with my Swag Account?
+1. Open a Bank account, deposit/withdraw money, and check your balance.
 
-From doing this project I learned:
+
+## From doing this project I learned:
 * Class inheritance
     * Class operations (constructing, destructing)
 * Polymorphism
@@ -18,5 +21,8 @@ From doing this project I learned:
 ---
 
 ## Future work
+- Accept user input and allow switching between bank accounts
+- Keep track of bank account history
+- Persist data
 - Add libraries to this project
 - Add more types of accounts and simulate a bank account over X period of time based on historical market data & consumer spending.
